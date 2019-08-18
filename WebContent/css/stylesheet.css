@@ -1,0 +1,509 @@
+
+
+
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:#0CF;
+}
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+
+div.ex1 {
+    width:35%;
+    height:35%;
+    margin: 0px -5px 0px 120px;
+    border: 3px solid #73AD21;
+    float: left;
+    text-align : center;
+}
+
+div.ex2 {
+    width:35%;
+    height: 35%;
+    margin: 0px 120px 0px -5px;
+    border: 3px solid #73AD21;
+    float: right;
+    text-align : center;
+}
+
+div.ex3{
+
+    margin: 0px 0px 0px 60px;
+}
+
+
+
+img {
+    max-width: 80%;
+    max-height: 80%;
+}
+body{
+    background-color: white;
+    margin: 10px 0px 0px 0px;
+}
+.logo{
+    width:200px;
+    height: auto;
+}
+
+.header{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+.nav{
+    height: auto;
+    width:auto;
+    float:left;
+
+}
+
+.nav ul{
+    display-inline:block;
+    margin:0px;
+    padding:20px 20px;
+
+}
+.nav ul li{
+    display:inline;
+}
+.nav ul  a{
+    color:white;
+    text-decoration:none;
+
+
+}
+
+.header tr td nav:hover{
+    background: blue;
+}
+
+.loginbut{
+    width: 385px;height: 40px;background-color: white;
+    border-radius:3px;text-decoration: solid;padding: 8px 16px;color: white;font-weight: bold;
+}
+
+.loginbut:hover{
+    background-color: #4d8de3;
+}
+
+.fromFont{
+    font-family: Ebrima;
+    color: darkblue;
+}
+
+input[type=text]{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+textarea{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type=password]{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+input[type=date]{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type=date]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+input[type=email]{
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type=email]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+
+textarea:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+input[type=password]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+.headfont {
+    font-family: Ebrima;
+    font-size: 16px;
+    font-weight: bold;
+    font-color:white;
+}
+
+
+.fontnav{
+    font-family: Baskerville Old Face;
+    font-size: 20px;
+}
+
+
+@keyframes slider {
+
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+.slider{
+    overflow: hidden;
+}
+.slider figure img{
+    width: 20%;
+    height: 5%;
+    float: left;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slider infinite;
+
+}
+
+.hometd{
+    width: 270px;
+    background-color: lightgoldenrodyellow;
+    padding: 40px;
+}
+.hometdspace{
+    width: 160px;
+}
+
+.home6head{
+    font-family: "Arial Black";
+    font-weight: bold;
+    font-size: 20px;
+}
+.home6para{
+    font-family: Calibri;
+    color: #bb1300;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer{
+    font-family: Calibri;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.intermainfont{
+    font-family:Tahoma ;
+    font-weight: bold;
+    color:white;
+    font-size: 20px;
+}
+
+.intermaintd{
+    background-color: #0500a6;
+    width: 400px;
+    height: 10px;
+    border-radius: 8px;
+
+}
+
+.intermaintd:hover{
+    background-color: #5d66ea;
+}
+
+.hometd:hover{
+    background-color: lightblue;
+    color: white;
+}
+.home6para:hover{
+    color: black;
+}
+.bg{
+    background-image: url("images/download.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+
+}
+
+
+.app{
+    font-size: 70px;
+    font-family: Algerian;
+    color: darkblue;
+
+}
+
+.book{
+    line-height: 200px;
+    font-size: 40px;
+    font-family: Century;
+    color: darkred;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+
+.fromFont{
+    font-family: Ebrima;
+    color: darkblue;
+    font-weight: bold;
+
+}
+
+input[type=text] {
+    border: 0.9px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.4s;
+
+
+}
+
+input[type=email] {
+    border: 0.9px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+input[type=email]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 8px 6px -6px dodgerblue;
+}
+
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 8px 6px -6px dodgerblue;
+}
+input[type=date] {
+    border: 0.9px solid black;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+textarea:focus{
+    border: 1px solid black;
+    box-shadow: 0 8px 6px -6px dodgerblue;
+}
+
+input[type=date]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 8px 6px -6px dodgerblue;
+}
+
+.con{
+
+    background-color: darkslategrey;
+    font-size: 24px;
+    color: white;
+    border-radius: 8px;
+    border-color: darkgrey;
+}
+.divs {
+    background-image: url("images/registerBP.jpg");
+    background-size:cover;
+    height: 800px;
+    width:100%;
+    padding-top: 5px;
+
+}
+.form {
+    height: 500px;
+    width: 700px;
+    font-size: 22px;
+    color: yellow;
+    margin-left: 200px;
+    margin-top: 10px;
+}

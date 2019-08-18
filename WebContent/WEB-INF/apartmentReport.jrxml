@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="apartmentReport" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="85ea8570-eec2-463a-a809-c0176441b4c2">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString language="SQL">
+		<![CDATA[select*from  bluelite.apartment ]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apartment"/>
+	</field>
+	<field name="apartmentName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="apartmentName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apartment"/>
+	</field>
+	<field name="apartmentId" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="apartmentId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apartment"/>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apartment"/>
+	</field>
+	<field name="site" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="site"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apartment"/>
+	</field>
+	<field name="room" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="room"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apartment"/>
+	</field>
+	<field name="squrft" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="squrft"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="apartment"/>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{apartmentName}]]></groupExpression>
+		<groupHeader>
+			<band height="33">
+				<staticText>
+					<reportElement mode="Opaque" x="0" y="0" width="100" height="32" forecolor="#666666" backcolor="#E6E6E6" uuid="1bc98d19-eb71-4542-8554-79461d7906f2"/>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[apartmentName]]></text>
+				</staticText>
+				<textField>
+					<reportElement mode="Opaque" x="100" y="0" width="455" height="32" forecolor="#006699" backcolor="#E6E6E6" uuid="9472af4d-a8bf-4454-88a0-8f50711eebbd"/>
+					<textElement>
+						<font size="24" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{apartmentName}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="-20" y="32" width="595" height="1" forecolor="#666666" uuid="9f153279-a15d-4a3e-8c0c-88e51ecb9ae9"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="efba9d87-3e49-43f1-a763-4f496f2bdd24"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="967b0b59-5e8b-44ee-b322-a166db4c465e"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TITLE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="d6e4e8b6-333b-4f10-8e0f-b3c4ffb2082c"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Add a description here]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="80820dd9-94e4-4a49-b1ca-46010065c71e"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="a7ac7702-0eb7-493a-8636-c88b929c7574">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="319406ec-8cbf-4a64-b8b2-937e9ce6b068"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="92" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="16e60bb1-7fe6-4b33-90d5-dfa2a3c41d8a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a729271e-aebe-468a-ad1e-ddcbab4fee16"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[apartmentId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="184" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="5d5fa100-1460-4a8c-a478-dd7f11fb27a9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38cb100f-a328-4d53-bc10-0b2917d20f96"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="cd372df8-75ff-44b2-9377-dd02832d2530">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07e90fe4-13e5-4d13-a3fb-31a77c2635a1"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[site]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="368" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="6302b8b2-6653-4abf-b7dd-b3edc30ab40b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d9a011d9-d29c-4ac6-a22c-e71a1cc8671e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[room]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="8067f784-216d-4a39-b8cb-1d5deebb4a22">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="32f596ba-cb97-48d5-931a-3c99b072997c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[squrft]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="7ffdb755-67e0-475a-b785-15bf24565fb5"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="92" height="20" uuid="563b3763-2b9d-4a05-854e-ba7a3631a0f5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="319406ec-8cbf-4a64-b8b2-937e9ce6b068"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="92" y="0" width="92" height="20" uuid="93651d8b-a66b-44ff-a45e-32a3e69e5d1e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a729271e-aebe-468a-ad1e-ddcbab4fee16"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{apartmentId}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="184" y="0" width="92" height="20" uuid="253fc21c-ffb6-4995-81ae-ddf7d74f3052">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38cb100f-a328-4d53-bc10-0b2917d20f96"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="276" y="0" width="92" height="20" uuid="89116aad-cc0f-47aa-a54f-caeed34109d8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07e90fe4-13e5-4d13-a3fb-31a77c2635a1"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{site}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="368" y="0" width="92" height="20" uuid="cbf09fd6-1fa2-4549-a27d-f41bb9a07500">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d9a011d9-d29c-4ac6-a22c-e71a1cc8671e"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{room}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="460" y="0" width="92" height="20" uuid="fb2c41de-6045-4c67-be62-795c84f0f991">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="32f596ba-cb97-48d5-931a-3c99b072997c"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{squrft}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="85ee2e36-32f4-4d87-ac91-30e62b57c2ec"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="e31d5bc2-338f-46de-a4e6-620c70c99eb5"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="3317cd4f-45d4-4ea4-a908-e9b528b32411"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
